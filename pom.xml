@@ -43,6 +43,9 @@
 		            <workers>${workers}</workers>
 		            <region>${region}</region>
 		            <objectStoreV2>true</objectStoreV2>
+					<properties>
+						<http.port>8081</http.port>
+					</properties>
 		        </cloudHubDeployment>
     </configuration>
 				
