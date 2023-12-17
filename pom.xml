@@ -35,7 +35,6 @@
 		            <muleVersion>${mule.vesrion}</muleVersion>
 		            <username>${anypoint.username}</username>
 		            <password>${anypoint.password}</password>
-		            
 		            <applicationName>${appname}</applicationName>
 		            <businessGroup>${business}</businessGroup>
 		            <environment>${env}</environment>
@@ -45,7 +44,7 @@
 		            <objectStoreV2>true</objectStoreV2>
 					<properties>
 						<http.port>8081</http.port>
-						<mule.env>sandbox</mule.env>
+						<mule.env>Sandbox</mule.env>
 					</properties>
 		        </cloudHubDeployment>
     </configuration>
