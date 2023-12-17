@@ -7,9 +7,8 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
 http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd">
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="79576a1c-247a-41cc-b98b-4874372a88f1" >
-		<http:listener-connection host="0.0.0.0" port="${http.port}" name="http"/>
+		<http:listener-connection host="0.0.0.0" port="${http.port}"/>
 	</http:listener-config>
-	<configuration-properties doc:name="Configuration properties" doc:id="b5220e39-72da-49c1-8b26-b838b8590c18" file="app.properties" />
 	<flow name="arithmetic-apiFlow" doc:id="3ad9c0d3-d3a7-442c-b84f-6db7699bdfc1" >
 		<http:listener doc:name="GET / Addition" doc:id="5744706c-0a69-4164-8475-3e46c3d5d452" config-ref="HTTP_Listener_config" path="/addition/{num1}/{num2}"/>
 		<logger level="INFO" doc:name="Logger" doc:id="af31cc2e-faf3-4575-9c29-b617fa5b2dc7" message='"Hi This is mulesoft class"'/>
