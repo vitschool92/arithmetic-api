@@ -7,7 +7,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
 http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd">
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="79576a1c-247a-41cc-b98b-4874372a88f1" >
-		<http:listener-connection host="0.0.0.0" port="8081"/>
+		<http:listener-connection host="0.0.0.0" port="${http.port}"/>
 	</http:listener-config>
 	<flow name="arithmetic-apiFlow" doc:id="2d9cd6ca-3a9f-47d2-91fa-45b1aad08bf2" >
 		<http:listener doc:name="Listener" doc:id="00c7cb19-8129-4d9a-a6bf-2ab992bd28eb" config-ref="HTTP_Listener_config" path="/demo"/>
