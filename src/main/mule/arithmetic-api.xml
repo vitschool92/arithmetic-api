@@ -13,14 +13,14 @@ http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/cu
 		<http:listener doc:name="Listener" doc:id="00c7cb19-8129-4d9a-a6bf-2ab992bd28eb" config-ref="HTTP_Listener_config" path="/addition"/>
 		<set-variable value="#[attributes.queryParams.num1]" doc:name="num1" doc:id="38a08a0c-4ae0-47c5-9b4b-1c309226779c" variableName="num1"/>
 		<set-variable value="#[attributes.queryParams.num2]" doc:name="num2" doc:id="2791ba01-7af1-44ba-97a5-df061ef1fdc3" variableName="num2"/>
-		<logger level="INFO" doc:name="Logger" doc:id="c2387d88-c63b-4cbe-96c8-2e255b0e3df5" message="This demo app"/>
+		<logger level="INFO" doc:name="Logger" doc:id="c2387d88-c63b-4cbe-96c8-2e255b0e3df5" message="Arithmetic app is triggered "/>
 		<ee:transform doc:name="Transform Message" doc:id="7a037be8-1a0c-409e-bb97-306b44f0c4b9" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
 output application/json
 ---
 {
-	"message": "Addition of 2 numbers ="++(vars.num1 as Number + vars.num2 as Number)
+	"message": "Addition of 2 numbers = "++(vars.num1 as Number + vars.num2 as Number)
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
