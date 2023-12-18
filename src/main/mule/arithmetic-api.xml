@@ -24,5 +24,6 @@ output application/json
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="ebe0f2c0-8984-4a3e-a854-92cf55194f81" message='"CICD/app deployement done successfully"'/>
 	</flow>
 </mule>
