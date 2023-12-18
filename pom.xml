@@ -30,7 +30,7 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-		        <!-- <cloudHubDeployment>
+		        <cloudHubDeployment>
 		            <uri>https://anypoint.mulesoft.com</uri>
 		            <muleVersion>${mule.vesrion}</muleVersion>
 		            <username>${anypoint.username}</username>
@@ -42,11 +42,11 @@
 		            <workers>${workers}</workers>
 		            <region>${region}</region>
 		            <objectStoreV2>true</objectStoreV2>
-					<properties>
+					<!-- <properties>
 						<http.port>8081</http.port>
-					</properties>
-		        </cloudHubDeployment> -->
-		        <cloudHubDeployment>
+					</properties> -->
+		        </cloudHubDeployment> 
+		       <!--  <cloudHubDeployment>
                         <uri>https://anypoint.mulesoft.com</uri>
                         <muleVersion>4.4.0</muleVersion>
                         <applicationName>${appname}</applicationName>
@@ -57,7 +57,7 @@
                         <connectedAppGrantType>client_credentials</connectedAppGrantType>
                         <objectStoreV2>true</objectStoreV2>
                         <region>us-east-2</region>
-                    </cloudHubDeployment>
+                    </cloudHubDeployment> -->
 		        
     </configuration>
 				
